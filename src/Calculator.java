@@ -24,8 +24,12 @@ public class Calculator {
                 System.out.println("The product is: " + (num1 * num2));
                 break;
             case '/':
+            if (num2 == 0) {
+                System.out.println("Error: Divide by Zero");
+            } else {
                 System.out.println("The quotient is: " + (num1 / num2));
-                break;
+            }
+            break;
             default:
                 System.out.println("Invalid operation selected.");
         }
